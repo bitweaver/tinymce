@@ -1,5 +1,4 @@
-{* $Header: /cvsroot/bitweaver/_tinymce/templates/header_inc.tpl,v 1.1.2.1 2005/07/10 08:06:38 squareing Exp $ *}
-{strip}
+{* $Header: /cvsroot/bitweaver/_tinymce/templates/header_inc.tpl,v 1.1.2.2 2005/07/10 08:33:02 wolff_borg Exp $ *}
 {if $gBitSystem->isPackageActive( 'tinymce' ) and ( $gBitLoc.browser.client eq 'mz' or $gBitLoc.browser.client eq 'ie' ) and $gContent->mInfo.format_guid == 'bithtml' }
 	<script type="text/javascript" src="{$gBitLoc.TINYMCE_PKG_URL}jscripts/tiny_mce.js"></script>
 	<script type="text/javascript">
@@ -25,4 +24,3 @@
 		//]]>
 	</script>
 {/if}
-{/strip}
