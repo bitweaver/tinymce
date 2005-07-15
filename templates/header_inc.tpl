@@ -1,5 +1,5 @@
-{* $Header: /cvsroot/bitweaver/_tinymce/templates/header_inc.tpl,v 1.1.2.4 2005/07/15 12:01:28 squareing Exp $ *}
-{if $gBitSystem->isPackageActive( 'tinymce' ) and ( $gBitLoc.browser.client eq 'mz' or $gBitLoc.browser.client eq 'ie' ) and $gContent->mInfo.format_guid == 'bithtml' and $textarea_id}
+{* $Header: /cvsroot/bitweaver/_tinymce/templates/header_inc.tpl,v 1.1.2.5 2005/07/15 21:43:15 squareing Exp $ *}
+{if $gBitSystem->isPackageActive( 'tinymce' ) and ( $gBitLoc.browser.client eq 'mz' or $gBitLoc.browser.client eq 'ie' ) and ( $default_format eq 'bithtml' or $gContent->mInfo.format_guid eq 'bithtml' ) and $textarea_id}
 	<script type="text/javascript" src="{$gBitLoc.TINYMCE_PKG_URL}jscripts/tiny_mce.js"></script>
 	<script type="text/javascript">
 		//<![CDATA[
