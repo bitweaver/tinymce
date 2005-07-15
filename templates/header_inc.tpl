@@ -1,4 +1,4 @@
-{* $Header: /cvsroot/bitweaver/_tinymce/templates/header_inc.tpl,v 1.1.2.3 2005/07/13 20:47:35 squareing Exp $ *}
+{* $Header: /cvsroot/bitweaver/_tinymce/templates/header_inc.tpl,v 1.1.2.4 2005/07/15 12:01:28 squareing Exp $ *}
 {if $gBitSystem->isPackageActive( 'tinymce' ) and ( $gBitLoc.browser.client eq 'mz' or $gBitLoc.browser.client eq 'ie' ) and $gContent->mInfo.format_guid == 'bithtml' and $textarea_id}
 	<script type="text/javascript" src="{$gBitLoc.TINYMCE_PKG_URL}jscripts/tiny_mce.js"></script>
 	<script type="text/javascript">
@@ -6,12 +6,12 @@
 		tinyMCE.init({literal}{{/literal}
 			mode		: "exact",
 			elements	: "{$textarea_id}",
-			{if $gBitSystemPrefs.tinymce_ask eq 'y'}
+			{if $gBitSystem->isFeatureActive( 'tinymce_ask' )}
 				ask		: true,
 			{/if}
 			theme		: "advanced",
 			plugins		: "table",
-			{if $gBitSystemPrefs.tinymce_debug eq 'y'}
+			{if $gBitSystem->isFeatureActive( 'tinymce_debug' )}
 				debug	: true,
 			{/if}
 			{if $gBitSystemPrefs.tinymce_cleanup eq 'n'}
