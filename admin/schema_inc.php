@@ -10,6 +10,8 @@ $gBitInstaller->registerPackageInfo( TINYMCE_PKG_NAME, array(
 ) );
 
 $gBitInstaller->registerPreferences( TINYMCE_PKG_NAME, array(
-	array('liberty','tinymce_ask','y'),
+	array('tinymce','tinymce_ask','y'),
+	array('tinymce','tinymce_debug','n'),
+	array('tinymce','tinymce_cleanup','y'),
 ) );
 ?>
