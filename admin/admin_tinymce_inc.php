@@ -17,7 +17,7 @@ $formTinyMCEFeatures = array(
 	),
 );
 
-$smarty->assign( 'formTinyMCEFeatures', $formTinyMCEFeatures );
+$gBitSmarty->assign( 'formTinyMCEFeatures', $formTinyMCEFeatures );
 
 if( !empty( $_REQUEST['change_prefs'] ) ) {
 	foreach( $formTinyMCEFeatures as $item => $data ) {
