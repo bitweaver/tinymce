@@ -1,4 +1,4 @@
-{* $Header: /cvsroot/bitweaver/_tinymce/templates/header_inc.tpl,v 1.1.2.7 2005/08/05 23:00:40 squareing Exp $ *}
+{* $Header: /cvsroot/bitweaver/_tinymce/templates/header_inc.tpl,v 1.1.2.8 2005/08/07 12:59:08 squareing Exp $ *}
 {if $gBitSystem->isPackageActive( 'tinymce' ) and $browser_supports_tinymce and ( $default_format eq 'bithtml' or $gContent->mInfo.format_guid eq 'bithtml' ) and $textarea_id}
 	<script type="text/javascript" src="{$smarty.const.TINYMCE_PKG_URL}jscripts/tiny_mce.js"></script>
 	<script type="text/javascript">
@@ -14,7 +14,7 @@
 			{if $gBitSystem->isFeatureActive( 'tinymce_debug' )}
 				debug	: true,
 			{/if}
-			{if $gBitSystemPrefs.tinymce_cleanup eq 'n'}
+			{if !$gBitSystem->isFeatureActive( 'tinymce_cleanup' )}
 				cleanup	: false,
 			{/if}
 			content_css : "{$smarty.const.THEMES_STYLE_URL}tinymce/tinymce.css",
