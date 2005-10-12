@@ -1,6 +1,6 @@
-{* $Header: /cvsroot/bitweaver/_tinymce/templates/header_inc.tpl,v 1.3 2005/08/07 17:46:45 squareing Exp $ *}
+{* $Header: /cvsroot/bitweaver/_tinymce/templates/header_inc.tpl,v 1.4 2005/10/12 15:14:07 spiderr Exp $ *}
 {if $gBitSystem->isPackageActive( 'tinymce' ) and $browser_supports_tinymce and ( $default_format eq 'bithtml' or $gContent->mInfo.format_guid eq 'bithtml' ) and $textarea_id}
-	<script type="text/javascript" src="{$smarty.const.TINYMCE_PKG_URL}jscripts/tiny_mce.js"></script>
+	<script type="text/javascript" src="{$smarty.const.TINYMCE_PKG_URL}jscripts/tiny_mce_gzip.php"></script>
 	<script type="text/javascript">
 		//<![CDATA[
 		tinyMCE.init({literal}{{/literal}
