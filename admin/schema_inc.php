@@ -10,8 +10,8 @@ $gBitInstaller->registerPackageInfo( TINYMCE_PKG_NAME, array(
 ) );
 
 $gBitInstaller->registerPreferences( TINYMCE_PKG_NAME, array(
-	array('tinymce','tinymce_ask','y'),
-	array('tinymce','tinymce_debug','n'),
-	array('tinymce','tinymce_cleanup','y'),
+	array(TINYMCE_PKG_NAME,'tinymce_ask','y'),
+	array(TINYMCE_PKG_NAME,'tinymce_debug','n'),
+	array(TINYMCE_PKG_NAME,'tinymce_cleanup','y'),
 ) );
 ?>
