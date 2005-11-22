@@ -1,9 +1,10 @@
 <?php
 	/**
 	 * $RCSfile: tiny_mce_gzip.php,v $
-	 * $Revision: 1.2 $
-	 * $Date: 2005/10/23 14:43:14 $
+	 * $Revision: 1.3 $
+	 * $Date: 2005/11/22 07:28:10 $
 	 *
+	 * @package tinymce
 	 * @author Moxiecode
 	 * @copyright Copyright © 2004, Moxiecode Systems AB, All rights reserved.
 	 *
