@@ -1,4 +1,12 @@
-// UK lang variables
+/**
+ * Czech lang variables 
+ * encoding: utf-8
+ *  
+ * $Id: cs.js,v 1.1.1.1.2.2 2005/12/04 23:42:17 squareing Exp $ 
+ */  
 
-tinyMCELang['lang_insert_emotions_title'] = 'Vloûit emotikon';
-tinyMCELang['lang_emotions_desc'] = 'Emotikony';
+tinyMCE.addToLang('',{
+insert_emotions_title : 'Vlo≈æit emotikonu',
+emotions_desc : 'Emotikony'
+});
+
