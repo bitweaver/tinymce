@@ -1,3 +1,11 @@
-// CS lang variables 
+/**
+ * Czech lang variables 
+ * encoding: utf-8
+ *  
+ * $Id: cs.js,v 1.3 2005/12/05 23:49:29 squareing Exp $ 
+ */  
 
-tinyMCELang['lang_print_desc'] = 'Tisk';
+tinyMCE.addToLang('',{
+print_desc : 'Tisk'
+});
+
