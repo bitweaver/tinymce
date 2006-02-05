@@ -5,7 +5,6 @@ $gBitInstaller->registerPackageInfo( TINYMCE_PKG_NAME, array(
 	'license' => '<a href="http://www.gnu.org/licenses/licenses.html#LGPL">LGPL</a>',
 	'version' => '2.0.1',
 	'state' => 'external package',
-	'dependencies' => '',
 	'important' => 'When using this WYSIWYG, we recommend that you either use HTML as the only content format or at least set it as default (formats can be set in Administration --> Liberty --> Liberty plugins).',
 ) );
 
