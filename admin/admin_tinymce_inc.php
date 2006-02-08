@@ -21,7 +21,7 @@ $gBitSmarty->assign( 'formTinyMCEFeatures', $formTinyMCEFeatures );
 
 if( !empty( $_REQUEST['change_prefs'] ) ) {
 	foreach( $formTinyMCEFeatures as $item => $data ) {
-		simple_set_toggle( $item );
+		simple_set_toggle( $item, TINYMCE_PKG_NAME );
 	}
 }
 ?>
