@@ -1,4 +1,9 @@
 <?php
 global $gBitSystem;
-$gBitSystem->registerPackage( 'tinymce', dirname( __FILE__ ).'/' );
+
+$registerHash = array(
+	'package_name' => 'tinymce',
+	'package_path' => dirname( __FILE__ ).'/',
+);
+$gBitSystem->registerPackage( $registerHash );
 ?>
