@@ -6,7 +6,7 @@
  * @author Pavel Novák
  * @author Josef Klimosz
  *    
- * $Id: cs.js,v 1.3 2005/12/05 23:49:26 squareing Exp $ 
+ * $Id: cs.js,v 1.4 2006/03/22 10:24:21 squareing Exp $ 
  */  
 
 

@@ -1,7 +1,7 @@
 /**
  * $RCSfile: tiny_mce_popup.js,v $
- * $Revision: 1.3 $
- * $Date: 2005/12/05 23:49:26 $
+ * $Revision: 1.4 $
+ * $Date: 2006/03/22 10:24:20 $
  *
  * @author Moxiecode
  * @copyright Copyright © 2004, Moxiecode Systems AB, All rights reserved.

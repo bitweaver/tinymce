@@ -4,7 +4,7 @@
  * 
  * @author Vladimir VASIL vvasil@post.sk
  *    
- * $Id: sk.js,v 1.2 2005/12/06 02:03:54 squareing Exp $ 
+ * $Id: sk.js,v 1.3 2006/03/22 10:24:22 squareing Exp $ 
  */  
 
 tinyMCE.addToLang('',{

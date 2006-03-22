@@ -1,7 +1,7 @@
 /**
  * $RCSfile: form_utils.js,v $
- * $Revision: 1.2 $
- * $Date: 2005/12/06 10:12:48 $
+ * $Revision: 1.3 $
+ * $Date: 2006/03/22 10:24:32 $
  *
  * Various form utilitiy functions.
  *

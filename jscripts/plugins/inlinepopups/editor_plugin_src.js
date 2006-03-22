@@ -1,7 +1,7 @@
 /**
  * $RCSfile: editor_plugin_src.js,v $
- * $Revision: 1.2 $
- * $Date: 2005/12/06 10:12:47 $
+ * $Revision: 1.3 $
+ * $Date: 2006/03/22 10:24:26 $
  *
  * Moxiecode DHTML Windows script.
  *
