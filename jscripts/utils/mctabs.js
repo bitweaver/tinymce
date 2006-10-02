@@ -1,12 +1,12 @@
 /**
  * $RCSfile: mctabs.js,v $
- * $Revision: 1.3 $
- * $Date: 2006/03/22 10:24:32 $
+ * $Revision: 1.4 $
+ * $Date: 2006/10/02 13:01:38 $
  *
  * Moxiecode DHTML Tabs script.
  *
  * @author Moxiecode
- * @copyright Copyright © 2004, Moxiecode Systems AB, All rights reserved.
+ * @copyright Copyright © 2004-2006, Moxiecode Systems AB, All rights reserved.
  */
 
 function MCTabs() {
