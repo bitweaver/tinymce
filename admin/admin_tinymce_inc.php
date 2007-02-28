@@ -5,6 +5,11 @@ $formTinyMCEFeatures = array(
 		'note' => 'Ask before using the WYSIWYG editor tinymce when clicking on a textarea. If you disable this feature, we strongly suggest you enable HTML content format as the only content format and also disable quicktags.',
 		'page' => '',
 	),
+	"tinymce_fullscreen" => array(
+		'label' => 'Full screen mode',
+		'note' => 'Enable full screen editor mode for tinymce.',
+		'page' => '',
+	),
 	"tinymce_debug" => array(
 		'label' => 'Enabled debugging',
 		'note' => 'If the value of this option is set to "true" some debugging information will appear such as a list of what CSS files are used.',
