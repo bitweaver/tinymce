@@ -1,12 +1,10 @@
 /**
- * $RCSfile: editable_selects.js,v $
- * $Revision: 1.1 $
- * $Date: 2006/10/02 13:01:38 $
+ * $Id: editable_selects.js,v 1.4 2007/12/21 23:28:28 joasch Exp $
  *
  * Makes select boxes editable.
  *
  * @author Moxiecode
- * @copyright Copyright © 2004-2006, Moxiecode Systems AB, All rights reserved.
+ * @copyright Copyright © 2004-2007, Moxiecode Systems AB, All rights reserved.
  */
 
 var TinyMCE_EditableSelects = {

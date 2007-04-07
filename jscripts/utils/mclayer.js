@@ -1,12 +1,10 @@
 /**
- * $RCSfile: mclayer.js,v $
- * $Revision: 1.1 $
- * $Date: 2006/10/02 13:01:38 $
+ * $Id: mclayer.js,v 1.4 2007/12/21 23:28:28 joasch Exp $
  *
  * Moxiecode floating layer script.
  *
  * @author Moxiecode
- * @copyright Copyright © 2004-2006, Moxiecode Systems AB, All rights reserved.
+ * @copyright Copyright © 2004-2007, Moxiecode Systems AB, All rights reserved.
  */
 
 function MCLayer(id) {
