@@ -1,22 +1,20 @@
 /**
- * $RCSfile: editor_plugin_src.js,v $
- * $Revision: 1.4 $
- * $Date: 2006/10/02 12:59:54 $
+ * $Id: editor_plugin_src.js,v 1.6 2007/12/21 23:28:30 joasch Exp $
  *
  * @author Moxiecode
- * @copyright Copyright © 2004-2006, Moxiecode Systems AB, All rights reserved.
+ * @copyright Copyright © 2004-2007, Moxiecode Systems AB, All rights reserved.
  */
 
 /* Import plugin specific language pack */
-tinyMCE.importPluginLanguagePack('autosave', 'en,tr,sv,cs,he,nb,hu,de,da,ru,ru_KOI8-R,ru_UTF-8,nn,fi,cy,es,is,pl,pt_br');
+tinyMCE.importPluginLanguagePack('autosave');
 
 var TinyMCE_AutoSavePlugin = {
 	getInfo : function() {
 		return {
 			longname : 'Auto save',
-			author : 'Moxiecode Systems',
+			author : 'Moxiecode Systems AB',
 			authorurl : 'http://tinymce.moxiecode.com',
-			infourl : 'http://tinymce.moxiecode.com/tinymce/docs/plugin_autosave.html',
+			infourl : 'http://wiki.moxiecode.com/index.php/TinyMCE:Plugins/autosave',
 			version : tinyMCE.majorVersion + "." + tinyMCE.minorVersion
 		};
 	},

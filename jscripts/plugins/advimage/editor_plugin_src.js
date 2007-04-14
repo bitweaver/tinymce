@@ -1,22 +1,20 @@
 /**
- * $RCSfile: editor_plugin_src.js,v $
- * $Revision: 1.5 $
- * $Date: 2006/10/02 12:59:49 $
+ * $Id: editor_plugin_src.js,v 1.7 2007/12/21 23:28:30 joasch Exp $
  *
  * @author Moxiecode
- * @copyright Copyright © 2004-2006, Moxiecode Systems AB, All rights reserved.
+ * @copyright Copyright © 2004-2007, Moxiecode Systems AB, All rights reserved.
  */
 
 /* Import plugin specific language pack */
-tinyMCE.importPluginLanguagePack('advimage', 'en,tr,de,sv,zh_cn,cs,fa,fr_ca,fr,pl,pt_br,nl,he,nb,ru,ru_KOI8-R,ru_UTF-8,nn,cy,es,is,zh_tw,zh_tw_utf8,sk,da');
+tinyMCE.importPluginLanguagePack('advimage');
 
 var TinyMCE_AdvancedImagePlugin = {
 	getInfo : function() {
 		return {
 			longname : 'Advanced image',
-			author : 'Moxiecode Systems',
+			author : 'Moxiecode Systems AB',
 			authorurl : 'http://tinymce.moxiecode.com',
-			infourl : 'http://tinymce.moxiecode.com/tinymce/docs/plugin_advimage.html',
+			infourl : 'http://wiki.moxiecode.com/index.php/TinyMCE:Plugins/advimage',
 			version : tinyMCE.majorVersion + "." + tinyMCE.minorVersion
 		};
 	},
@@ -60,8 +58,8 @@ var TinyMCE_AdvancedImagePlugin = {
 	cleanup : function(type, content) {
 		switch (type) {
 			case "insert_to_editor_dom":
-				var imgs = content.getElementsByTagName("img");
-				for (var i=0; i<imgs.length; i++) {
+				var imgs = content.getElementsByTagName("img"), src, i;
+				for (i=0; i<imgs.length; i++) {
 					var onmouseover = tinyMCE.cleanupEventStr(tinyMCE.getAttrib(imgs[i], 'onmouseover'));
 					var onmouseout = tinyMCE.cleanupEventStr(tinyMCE.getAttrib(imgs[i], 'onmouseout'));
 
