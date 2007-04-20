@@ -1,5 +1,5 @@
-{* $Header: /cvsroot/bitweaver/_tinymce/templates/header_inc.tpl,v 1.8 2007/02/28 06:31:40 lsces Exp $ *}
-{if $gBitSystem->isPackageActive( 'tinymce' ) and ( $gBitSystem->getConfig('default_format') eq 'bithtml' or $gContent->mInfo.format_guid eq 'bithtml' ) and $textarea_id}
+{* $Header: /cvsroot/bitweaver/_tinymce/templates/header_inc.tpl,v 1.9 2007/04/20 00:15:31 nickpalmer Exp $ *}
+{if $gBitSystem->isPackageActive( 'tinymce' ) and $textarea_id and ($gBitSystem->isFeatureActive('liberty_plugin_status_bithtml') or $gContent->mInfo.format_guid eq 'bithtml')}
 	<script type="text/javascript" src="{$smarty.const.TINYMCE_PKG_URL}jscripts/tiny_mce_gzip.php"></script>
 	<script type="text/javascript">
 		//<![CDATA[
