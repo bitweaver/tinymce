@@ -1,5 +1,9 @@
-{* $Header: /cvsroot/bitweaver/_tinymce/templates/header_inc.tpl,v 1.9 2007/04/20 00:15:31 nickpalmer Exp $ *}
-{if $gBitSystem->isPackageActive( 'tinymce' ) and $textarea_id and ($gBitSystem->isFeatureActive('liberty_plugin_status_bithtml') or $gContent->mInfo.format_guid eq 'bithtml')}
+{* $Header: /cvsroot/bitweaver/_tinymce/templates/header_inc.tpl,v 1.10 2007/04/20 14:52:56 nickpalmer Exp $ *}
+{* This gets set later in the page load now for most pages. *}
+{if empty($textarea_id)}
+	{assign var=textarea_id value=$smarty.const.LIBERTY_TEXT_AREA}
+{/if}
+{if $gBitSystem->isPackageActive( 'tinymce' ) and ($gBitSystem->isFeatureActive('liberty_plugin_status_bithtml') or $gContent->mInfo.format_guid eq 'bithtml')}
 	<script type="text/javascript" src="{$smarty.const.TINYMCE_PKG_URL}jscripts/tiny_mce_gzip.php"></script>
 	<script type="text/javascript">
 		//<![CDATA[
