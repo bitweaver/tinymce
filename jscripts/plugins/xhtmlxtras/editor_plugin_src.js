@@ -1,5 +1,5 @@
  /**
- * $Id: editor_plugin_src.js,v 1.2 2007/04/14 17:56:53 jetskijoe Exp $
+ * $Id: editor_plugin_src.js,v 1.3 2007/12/21 23:28:29 joasch Exp $
  *
  * @author Moxiecode - based on work by Andrew Tetlaw
  * @copyright Copyright © 2004-2007, Moxiecode Systems AB, All rights reserved.
@@ -188,11 +188,11 @@ var TinyMCE_XHTMLXtrasPlugin = {
 	},
 
 	_anySel : function(editor_id) {
-		var inst = tinyMCE.getInstanceById(editor_id), t = inst.selection.getSelectedText(), pe;
+		var inst = tinyMCE.getInstanceById(editor_id), pe;
 
 		pe = tinyMCE.getParentElement(inst.getFocusElement(), 'CITE,ACRONYM,ABBR,HTML:ABBR,DEL,INS');
 
-		return pe || inst.getFocusElement().nodeName == "IMG" || (t && t.length > 0);
+		return pe || !inst.selection.isCollapsed();
 	}
 };
 

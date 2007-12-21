@@ -1,5 +1,5 @@
 /**
- * $Id: editor_plugin_src.js,v 1.6 2007/04/14 17:56:50 jetskijoe Exp $
+ * $Id: editor_plugin_src.js,v 1.7 2007/12/21 23:28:32 joasch Exp $
  *
  * Moxiecode DHTML Windows script.
  *
@@ -88,14 +88,19 @@ TinyMCE_Engine.prototype.openWindow = function(template, args) {
 
 TinyMCE_Engine.prototype.closeWindow = function(win) {
 	var gotit = false, n, w;
+
 	for (n in mcWindows.windows) {
 		w = mcWindows.windows[n];
-		if (typeof(w) == 'function') continue;
+
+		if (typeof(w) == 'function')
+			continue;
+
 		if (win.name == w.id + '_iframe') {
 			w.close();
 			gotit = true;
 		}
 	}
+
 	if (!gotit)
 		this.orgCloseWindow(win);
 

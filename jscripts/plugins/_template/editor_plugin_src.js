@@ -1,14 +1,12 @@
 /**
- * $RCSfile: editor_plugin_src.js,v $
- * $Revision: 1.4 $
- * $Date: 2006/10/02 12:59:47 $
+ * $Id: editor_plugin_src.js,v 1.5 2007/12/21 23:28:26 joasch Exp $
  *
  * @author Moxiecode
- * @copyright Copyright © 2004-2006, Moxiecode Systems AB, All rights reserved.
+ * @copyright Copyright © 2004-2007, Moxiecode Systems AB, All rights reserved.
  */
 
 /* Import plugin specific language pack */
-tinyMCE.importPluginLanguagePack('template', 'en,tr,he,nb,ru,ru_KOI8-R,ru_UTF-8,nn,fi,cy,es,is,pl'); // <- Add a comma separated list of all supported languages
+tinyMCE.importPluginLanguagePack('template');
 
 /****
  * Steps for creating a plugin from this template:
@@ -52,6 +50,15 @@ var TinyMCE_TemplatePlugin = {
 
 		// Register custom keyboard shortcut
 		inst.addShortcut('ctrl', 't', 'lang_template_desc', 'mceTemplate');
+	},
+
+	/**
+	 * Gets executed when a TinyMCE editor instance is removed.
+	 *
+	 * @param {TinyMCE_Control} Removed TinyMCE editor control instance. 
+	 */
+	removeInstance : function(inst) {
+		// Cleanup instance resources
 	},
 
 	/**

@@ -1,5 +1,5 @@
 /**
- * $Id: editor_plugin_src.js,v 1.2 2007/04/14 17:56:50 jetskijoe Exp $
+ * $Id: editor_plugin_src.js,v 1.3 2007/12/21 23:28:30 joasch Exp $
  *
  * @author Moxiecode
  * @copyright Copyright © 2004-2007, Moxiecode Systems AB, All rights reserved.
@@ -127,7 +127,15 @@ var TinyMCE_FullPagePlugin = {
 				break;
 
 			case "get_from_editor":
-				if (inst.fullpageTopContent)
+				if (inst.fullpageTopContent && !tinyMCE.getParam("fullpage_hide_in_source_view", false)) {
+					content = content.replace(/(\s)?mce\_[a-z_]+\=[^\s>]+(\s|\>)/i, ''); // Remove internal stuff
+					content = inst.fullpageTopContent + content + "\n</body>\n</html>";
+				}
+
+				break;
+
+			case "submit_content":
+				if (inst.fullpageTopContent && tinyMCE.getParam("fullpage_hide_in_source_view", false))
 					content = inst.fullpageTopContent + content + "\n</body>\n</html>";
 
 				break;
