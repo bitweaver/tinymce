@@ -1,5 +1,5 @@
 /**
- * $Id: editor_plugin_src.js,v 1.8 2009/04/26 05:19:51 lsces Exp $
+ * $Id: editor_plugin_src.js,v 1.9 2009/07/28 10:23:23 lsces Exp $
  *
  * @author Moxiecode
  * @copyright Copyright © 2004-2008, Moxiecode Systems AB, All rights reserved.
@@ -50,7 +50,7 @@
 
 			// Only store selection if the type is a normal window
 			if (!f.type)
-				t.bookmark = ed.selection.getBookmark('simple');
+				t.bookmark = ed.selection.getBookmark(1);
 
 			id = DOM.uniqueId();
 			vp = DOM.getViewPort();
