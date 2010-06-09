@@ -1,6 +1,6 @@
 <?php
 /**
- * $Id: EnchantSpell.php,v 1.1 2009/04/26 06:00:10 lsces Exp $
+ * $Id$
  *
  * This class was contributed by Michel Weimerskirch.
  *

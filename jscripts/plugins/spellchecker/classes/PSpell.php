@@ -1,6 +1,6 @@
 <?php
 /**
- * $Id: PSpell.php,v 1.1 2009/04/26 06:00:10 lsces Exp $
+ * $Id$
  *
  * @author Moxiecode
  * @copyright Copyright © 2004-2007, Moxiecode Systems AB, All rights reserved.

@@ -1,4 +1,4 @@
-{* $Header: /cvsroot/bitweaver/_tinymce/templates/header_inc.tpl,v 1.12 2007/12/22 22:12:54 joasch Exp $ *}
+{* $Header$ *}
 {* This gets set later in the page load now for most pages. *}
 {if empty($textarea_id)}
 	{assign var=textarea_id value=$smarty.const.LIBERTY_TEXT_AREA}
