@@ -1,9 +1,9 @@
 {strip}
 {form}
 	{legend legend="General Settings"}
-		<div class="row">
+		<div class="control-group">
 			{foreach from=$formTinyMCEFeatures key=item item=output}
-				<div class="row">
+				<div class="control-group">
 					{formlabel label=`$output.label` for=$item}
 					{forminput}
 						{html_checkboxes name="$item" values="y" checked=$gBitSystem->getConfig($item) labels=false id=$item}
@@ -13,7 +13,7 @@
 			{/foreach}
 		</div>
 
-		<div class="row submit">
+		<div class="control-group submit">
 			<input type="hidden" name="page" value="{$page}" />
 			<input type="submit" name="change_prefs" value="{tr}Change preferences{/tr}" />
 		</div>
